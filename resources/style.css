@@ -16,7 +16,7 @@ html {
 /* Container */
 .container {
     display: grid;
-    grid: 125px 800px 120px 540px 200px 50px / repeat(4, 1fr) 160px 430px 160px repeat(4, 1fr);
+    grid: 125px 800px 120px 540px 260px 50px / repeat(4, 1fr) 160px 430px 160px repeat(4, 1fr);
     grid-gap: 10px; 
 }
 
@@ -93,8 +93,15 @@ html {
 .release {
     grid-row: 5 / 6;
     grid-column: 4 / 9;
-    border: 5px solid yellow;
-    background-color: red;
+}
+
+.date {
+    text-align: center;
+    line-height: 60px;
+}
+
+.date a {
+    color: aquamarine;   
 }
 
 /* Footer Section */
