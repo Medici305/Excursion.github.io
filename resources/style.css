@@ -16,7 +16,7 @@ html {
 /* Container */
 .container {
     display: grid;
-    grid: 125px 700px 100px 400px 200px 50px / repeat(4, 1fr) 200px 400px 200px repeat(4, 1fr);
+    grid: 125px 800px 100px 400px 200px 50px / repeat(4, 1fr) 160px 430px 160px repeat(4, 1fr);
     grid-gap: 10px; 
 }
 
@@ -36,8 +36,22 @@ html {
 .iphone {
     grid-row: 2 / 3;
     grid-column: 6 / 7;
-    border: 5px solid yellow;
-    background-color: red;
+}
+
+.download {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.download a{
+    color: aquamarine;
+}
+
+.screen {
+    position: relative;
+    top: 40px;
+    margin-left: 11px;
 }
 
 /* Travel Guide Section */
