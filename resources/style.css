@@ -1,6 +1,8 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: white;
+    background-color: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +16,7 @@ html {
 /* Container */
 .container {
     display: grid;
-    grid: 100px 700px 100px 400px 200px 50px / repeat(4, 1fr) 200px 400px 200px repeat(4, 1fr);
+    grid: 125px 700px 100px 400px 200px 50px / repeat(4, 1fr) 200px 400px 200px repeat(4, 1fr);
     grid-gap: 10px; 
 }
 
@@ -22,8 +24,12 @@ html {
 .heading {
     grid-row: 1 / 2;
     grid-column: 1 / 12;
-    border: 5px solid yellow;
-    background-color: red;
+}
+
+.headline {
+    text-align: center;
+    font-size: 3.125rem;
+    line-height: 115px;
 }
 
 /* Large Iphone Section */
@@ -51,7 +57,7 @@ html {
 }
 
 /* Release Date*/
-.date {
+.release {
     grid-row: 5 / 6;
     grid-column: 4 / 9;
     border: 5px solid yellow;
