@@ -182,7 +182,10 @@ html {
 
     .headline {
         font-size: 2.6rem;
-        color: red;
+    }
+
+    .download {
+        margin-top: 10px;
     }
 
     .download a {
@@ -193,6 +196,15 @@ html {
         height: 600px;
         margin-left: 40px;
         margin-top: 2px;
+    }
+
+    .screen {
+        margin-right: 10px;
+
+    }
+
+    .second-title {
+        margin-top: 20px;
     }
 
     .second-title h1{
@@ -224,6 +236,12 @@ html {
     
     .copy-right p {
         font-size: 1rem;
+    }
+
+    .container {
+        display: grid;
+        grid: 110px 700px 110px 540px 220px 50px / repeat(4, 1fr) 160px 430px 160px repeat(4, 1fr);
+        grid-gap: 1px; 
     }
 }
 
