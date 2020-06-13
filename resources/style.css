@@ -85,6 +85,10 @@ html {
     justify-items: center;
 }
 
+.pic {
+    display: flex;
+}
+
 /* Release Date*/
 .release {
     grid-row: 5 / 6;
@@ -112,5 +116,177 @@ html {
     font-size: 1.3125rem;
     color: gray;
     margin-right: 20px;
+}
+
+/* Responive Layout part 1 */
+@media only screen and (max-width: 1300px) and (min-width: 1130px) {
+    
+    .headline {
+        font-size: 2.9rem;
+    }
+
+    .download a {
+        font-size: 0.97rem;
+    }
+
+    .screen {
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+
+    .screen video {
+        height: 700px;
+    }
+
+    .second-title h1{
+        font-size: 2.5rem;
+    }   
+
+    .second-title p {
+        font-size: 1.2rem;
+    }
+
+    .pic img {
+        width: 800px;
+        height: 500px;
+    }
+
+    .date img {
+        height: 85px;
+        width: 50px;
+    }
+
+    .date h1 {
+        font-size: 1.4rem;
+    }
+
+    .date p {
+        font-size: 0.97rem;
+    }
+    
+    .copy-right p {
+        font-size: 1.2rem;
+    }
+
+    /* Background-Color */
+    
+    .container {
+        display: grid;
+        grid: 110px 800px 120px 540px 240px 50px / repeat(4, 1fr) 160px 430px 160px repeat(4, 1fr);
+        grid-gap: 1px; 
+    }
+}
+
+/* Responive Layout part 2 */
+@media only screen and (max-width: 1130px) and (min-width: 800px) {
+
+    .headline {
+        font-size: 2.6rem;
+        color: red;
+    }
+
+    .download a {
+        font-size: 0.91rem;
+    }
+
+    .screen video {
+        height: 600px;
+        margin-left: 40px;
+        margin-top: 2px;
+    }
+
+    .second-title h1{
+        font-size: 2.3rem;
+    }   
+
+    .second-title p {
+        font-size: 1rem;
+    }
+
+    .pic img {
+        width: 700px;
+        height: 400px;
+        margin-top: 70px;
+    }
+
+    .date img {
+        height: 80px;
+        width: 45px;
+    }
+
+    .date h1 {
+        font-size: 1.2rem;
+    }
+
+    .date p {
+        font-size: 0.91rem;
+    }
+    
+    .copy-right p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+    .headline {
+        font-size: 2.1rem;
+    }
+}
+
+/* Responive Layout part 3 */
+@media only screen and (max-wdith: 800px) {
+
+    .second-title h1{
+        font-size: 2.0rem;
+    }   
+
+    .second-title p {
+        font-size: .8rem;
+    }
+
+    .pic img {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 480px) {
+
+    .headline {
+        font-size: 1.7rem;
+    }
+
+    .download a {
+        font-size: 0.7rem;
+    }
+
+    .second-title h1 {
+        font-size: 1.6rem;
+    }
+
+    .second-title p {
+        font-size: 0.5rem 
+    }
+
+    .date h1 {
+        font-size: 0.7rem;
+    }
+
+    .date a {
+        font-size: 0.7rem;
+    }
+
+    .copy-right p {
+        font-size: 1rem;
+    }    
+}
+
+@media only screen and (max-width: 480px) {
+    .pic {
+        display: flex;
+    }
+
+    .pic img {
+        flex-shrink: 7;
+    }
 }
 
