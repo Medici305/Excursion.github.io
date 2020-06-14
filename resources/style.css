@@ -70,10 +70,12 @@ html {
     font-size: 2.625rem;
 }
 
-.second-title p {
+.second-title p, .second-title p .seperating{
     font-size: 1.3125rem;
     color: gray;
 }
+
+
 
 /* Image Section */
 .image {
@@ -125,6 +127,10 @@ html {
         font-size: 2.9rem;
     }
 
+    .download {
+        margin-top: 12px;
+    }
+
     .download a {
         font-size: 0.97rem;
     }
@@ -160,7 +166,7 @@ html {
         font-size: 1.4rem;
     }
 
-    .date p {
+    .date a {
         font-size: 0.97rem;
     }
     
@@ -178,7 +184,7 @@ html {
 }
 
 /* Responive Layout part 2 */
-@media only screen and (max-width: 1130px) and (min-width: 800px) {
+@media only screen and (max-width: 1130px) and (min-width: 820px) {
 
     .headline {
         font-size: 2.6rem;
@@ -230,7 +236,7 @@ html {
         font-size: 1.2rem;
     }
 
-    .date p {
+    .date a {
         font-size: 0.91rem;
     }
     
@@ -245,66 +251,256 @@ html {
     }
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 800px) {
+@media only screen and (max-width: 1020px) and (min-width: 600px) {
     .headline {
-        font-size: 2.1rem;
+        font-size: 2.6rem;
+        display: block;
+        line-height: 60px;
+        position: relative;
+        top: 30px;
+    }
+
+    .seperate {
+        display: block;
+    }
+
+    .container {
+        display: grid;
+        grid: 170px 700px 110px 540px 220px 50px / repeat(4, 1fr) 160px 430px 160px repeat(4, 1fr);
+        grid-gap: 1px; 
     }
 }
 
 /* Responive Layout part 3 */
-@media only screen and (max-wdith: 800px) {
+@media only screen and (max-width: 820px) and (min-width: 600px) {
 
-    .second-title h1{
-        font-size: 2.0rem;
-    }   
-
-    .second-title p {
-        font-size: .8rem;
-    }
-
-    .pic img {
-        width: 500px;
-    }
-}
-
-@media only screen and (max-width: 700px) and (min-width: 480px) {
-
-    .headline {
-        font-size: 1.7rem;
+    .download {
+        margin-top: 10px;
     }
 
     .download a {
-        font-size: 0.7rem;
+        font-size: 0.87rem;
     }
 
-    .second-title h1 {
-        font-size: 1.6rem;
+    .screen video {
+        height: 550px;
+        margin-left: 20px;
+        margin-top: 2px;
     }
+
+    .screen {
+       position: relative;
+       right: 30px;
+    }
+
+    .second-title {
+        margin-top: 15px;
+    }
+
+    .second-title h1{
+        font-size: 2.1rem;
+    }   
 
     .second-title p {
-        font-size: 0.5rem 
+        font-size: 0.9rem;
     }
 
-    .date h1 {
-        font-size: 0.7rem;
-    }
-
-    .date a {
-        font-size: 0.7rem;
-    }
-
-    .copy-right p {
-        font-size: 1rem;
-    }    
-}
-
-@media only screen and (max-width: 480px) {
-    .pic {
-        display: flex;
+    .second-title p .seperating {
+        font-size: 0.9rem;
+        display: block;
     }
 
     .pic img {
-        flex-shrink: 7;
+        width: 600px;
+        height: 350px;
+        margin-top: 75px;
+    }
+
+    .date {
+        line-height: 50px;
+    }
+
+    .date img {
+        height: 75px;
+        width: 40px;
+    }
+
+    .date h1 {
+        font-size: 1rem;
+    }
+
+    .date a {
+        font-size: 0.87rem;
+    }
+    
+    .copy-right p {
+        font-size: 0.85rem;
+    }
+
+    .container {
+        display: grid;
+        grid: 170px 650px 170px 500px 190px 40px / repeat(4, 1fr) 75px 315px 75px repeat(4, 1fr);
+        grid-gap: 1px; 
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 600px) {
+    .pic img {
+        width: 550px;
+        height: 350px;
+        margin-top: 75px;
+    }
+}
+
+/* Responive Layout part 4 */
+@media only screen and (max-width: 600px) and (min-width: 590px) {
+
+    .headline {
+        font-size: 2.1rem;
+    }
+
+    .seperate {
+        font-size: 2.1rem;
+    }
+
+    .download {
+        margin-top: 10px;
+    }
+
+    .download a {
+        font-size: 0.8rem;
+    }
+
+    .screen video {
+        height: 500px;
+        margin-left: 20px;
+        margin-top: 2px;
+        position: relative;
+        left: 1px;
+    }
+
+    .second-title {
+        margin-top: 15px;
+    }
+
+    .second-title h1{
+        font-size: 1.9rem;
+    }   
+
+    .second-title p, .second-title p .seperating {
+        font-size: 0.85rem;
+    }
+
+    .pic img {
+        width: 475px;
+        height: 300px;
+        margin-top: 75px;
+    }
+
+    .date {
+        line-height: 70px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    .date img {
+        height: 75px;
+        width: 40px;
+    }
+
+    .date h1 {
+        font-size: 1rem;
+    }
+
+    .date a {
+        font-size: 0.80rem;
+    }
+    
+    .copy-right p {
+        font-size: 0.85rem;
+    }
+
+    .container {
+        display: grid;
+        grid: 170px 600px 185px 500px 190px 40px / repeat(4, 1fr) 70px 275px 70px repeat(4, 1fr);
+        grid-gap: 1px; 
+    }
+}
+
+/* Responive Layout part 5 */
+@media only screen and (max-width: 590px) {
+    
+    .headline {
+        font-size: 2.1rem;
+        line-height: 80px;
+    }
+
+    .seperate {
+        font-size: 2.1rem;
+        display: block;
+    }
+
+    .download {
+        margin-top: 10px;
+    }
+
+    .download a {
+        font-size: 0.8rem;
+    }
+
+    .screen video {
+        height: 450px;
+        margin-left: 20px;
+        margin-top: 2px;
+        position: relative;
+        right: 15px;
+    }
+
+    .second-title {
+        margin-top: 15px;
+    }
+
+    .second-title h1{
+        font-size: 1.7rem;
+    }   
+
+    .second-title p, .second-title p .seperating {
+        font-size: 0.80rem;
+    }
+
+    .pic img {
+        width: 455px;
+        height: 300px;
+        margin-top: 65px;
+    }
+
+    .date {
+        line-height: 70px;
+        position: relative;
+        bottom: 80px;
+    }
+
+    .date img {
+        height: 75px;
+        width: 40px;
+    }
+
+    .date h1 {
+        font-size: 1rem;
+    }
+
+    .date a {
+        font-size: 0.80rem;
+    }
+    
+    .copy-right p {
+        font-size: 0.85rem;
+    }
+
+    .container {
+        display: grid;
+        grid: 180px 550px 170px 500px 160px 40px / repeat(4, 1fr) 70px 275px 70px repeat(4, 1fr);
+        grid-gap: 1px; 
     }
 }
 
